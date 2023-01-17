@@ -6,6 +6,8 @@ node {
     sh "npm install"
   }
   stage('build code'){
-    ssh
+    sshagent(['a36cca7a-fac2-463d-a84e-0071b39725fc']) {
+    sh ''
+}'
   }
 }
