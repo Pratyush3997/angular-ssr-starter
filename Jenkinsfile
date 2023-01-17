@@ -1,14 +1,11 @@
 node {
   stage('Checkout SCM'){
- git branch: 'master', url: 'https://github.com/KoilakuntlaRasool/angular-ssr-starter.git'
+ git credentialsId: 'javahome2', url: 'https://github.com/KoilakuntlaRasool/angular-ssr-starter.git'
   }
-  stage('Install node modules'){
+  stage('build code'){
     sh "npm install"
   }
-  stage('Build'){
-    sh "npm run build:ssr"
-  }
-  stage('Deploy'){
-    sh "pm2 restart all"
+  stage('build code'){
+    ssh
   }
 }
