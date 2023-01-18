@@ -7,7 +7,7 @@ node {
   }
   stage('build code'){
     sshagent(['a36cca7a-fac2-463d-a84e-0071b39725fc']) {
-    sh ''
+    sh 'src/index.html ec2-user@3.22.98.59'/
 }'
   }
 }
