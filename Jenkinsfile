@@ -9,6 +9,7 @@ node {
     sshagent(['a36cca7a-fac2-463d-a84e-0071b39725fc']) {
     sh 'src/index.html ec2-user@18.220.253.133'
       }
-  {
+  }
+}
       
 
