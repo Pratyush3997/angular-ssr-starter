@@ -10,4 +10,4 @@ node {
     sh 'src/index.html ec2-user@ 18.220.253.133'/
 }'
   }
-}
+
