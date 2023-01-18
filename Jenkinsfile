@@ -1,4 +1,9 @@
-node {
+pipeline {
+  agent any
+
+  tools {nodejs "nodejs"}
+
+ node {
   stage('Checkout SCM'){
  git credentialsId: 'javahome2', url: 'https://github.com/KoilakuntlaRasool/angular-ssr-starter.git'
   }
@@ -12,4 +17,6 @@ node {
   }
 }
       
+}
+
 
