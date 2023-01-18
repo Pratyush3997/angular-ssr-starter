@@ -1,4 +1,4 @@
-node {
+nodejs('NodeJS'){
   stage('Checkout SCM'){
  git credentialsId: 'javahome2', url: 'https://github.com/KoilakuntlaRasool/angular-ssr-starter.git'
   }
@@ -11,4 +11,3 @@ node {
       }
   }
 }
-      
