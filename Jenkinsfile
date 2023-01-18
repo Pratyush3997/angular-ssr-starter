@@ -1,7 +1,7 @@
 pipeline {
   agent any
 
-  tools {nodejs "nodejs"}
+  tools {Nodejs "Nodejs"}
 
  node {
   stage('Checkout SCM'){
